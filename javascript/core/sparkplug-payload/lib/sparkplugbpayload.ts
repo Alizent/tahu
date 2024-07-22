@@ -208,7 +208,7 @@ function getDataSetValue (type: number | null | undefined, object: IDataSetValue
         case 7: // UInt32
             if (object.longValue instanceof Long) return object.longValue.toInt();
             else if (isSet(object.longValue)) return object.longValue;
-        case 4: // UInt64
+        case 8: // UInt64
             if (isSet(object.longValue)) return object.longValue;
         case 9: // Float
             if (isSet(object.floatValue)) return object.floatValue;
